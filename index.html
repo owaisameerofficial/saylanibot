@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welfare Trust - Contact</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="SMIT.png" alt="Welfare Trust Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <div class="chatbot">
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          chat-icon="https:&#x2F;&#x2F;play-lh.googleusercontent.com&#x2F;dGp-bVuxKn-J-v744tzYnruh0bUdslcQJ43PPQEXxt4vjsHr3NPB_pxECO1mp57dWjY"
+          chat-title="SaylaniWelfare"
+          agent-id="6a82c936-321b-4d05-a8a5-35e03c19b67a"
+          language-code="en"
+        ></df-messenger>
+
+        <style>
+            df-messenger {
+
+                --df-messenger-bot-message: #d2e1d1;
+
+                --df-messenger-button-titlebar-color: rgb(142, 170, 213);
+
+                --df-messenger-chat-background-color: rgba(144, 144, 146, 0.507);
+
+                --df-messenger-font-color: rgb(0, 55, 128);
+
+                --df-messenger-send-icon: #ffffff;
+
+                --df-messenger-user-message: #b2e2af;
+
+            }
+        </style>
+
+    </div>
+    <footer>
+
+        <div class="container">
+            <p>&copy; 2024 Welfare Trust. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
